@@ -1,8 +1,8 @@
-/// \file file_open.c
+/// \file open.c
 /*
   ------------------------------------
   Create date : 2014-09-12 03:45
-  Modified date: 2014-09-12 03:54
+  Modified date: 2014-12-09 19:59
   Author : liaoshengxin
   Email : 654504711@qq.com
   ------------------------------------
@@ -12,7 +12,9 @@
 #include <stdlib.h>
 
 int main(int argc,char **argv){
+
 	int		fd_open,fd_open_create,fd_create;
+
 	if((fd_open = open("/bin/ls",O_RDONLY)) == -1){
 		perror("open");
 		exit(EXIT_FAILURE);
