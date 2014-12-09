@@ -1,8 +1,8 @@
-/// \file my_ll.c
+/// \file ll.c
 /*
   ------------------------------------
   Create date : 2014-10-24 03:29
-  Modified date: 2014-10-29 16:58
+  Modified date: 2014-12-09 19:54
   Author : liaoshengxin
   Email : 654504711@qq.com
   ------------------------------------
@@ -24,6 +24,7 @@ void show(char *path);
 void display(char *name);
 void display_l(struct stat buf,char *name);
 
+/**************主函数*************/
 int main(int argc,char *argv[]){
 	struct stat buf;
 	char path[100]={0};
@@ -35,6 +36,7 @@ int main(int argc,char *argv[]){
 		if(stat(argv[1],&buf) == -1){
 			perror("stat");
 		}
+		//构造路径
 		if(S_ISDIR(buf.st_mode)){
 			if(path[strlen(argv[1])-1] != '/'){
 				path[strlen(argv[1])] = '/';
@@ -52,6 +54,7 @@ int main(int argc,char *argv[]){
 
 }
 
+//获取一个目录的信息
 void show(char *path){
 	DIR *dir;
 	struct dirent *ptr;
@@ -85,6 +88,7 @@ void show(char *path){
 	
 }
 
+//显示目录内所有(除隐藏文件)文件信息
 void display(char *pathname){
 	int i,j=0;
 	struct stat buf;
@@ -107,6 +111,7 @@ void display(char *pathname){
 	printf("%s\n",name);
 }
 
+//获取文件属性
 void display_l(struct stat buf,char *name){
 	char buf_time[31]= {0};
 	struct passwd *psd;
