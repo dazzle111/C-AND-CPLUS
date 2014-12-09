@@ -1,8 +1,8 @@
-/// \file file_cp.c
+/// \file cp.c
 /*
   ------------------------------------
   Create date : 2014-09-17 03:27
-  Modified date: 2014-09-25 23:35
+  Modified date: 2014-12-09 19:48
   Author : liaoshengxin
   Email : 654504711@qq.com
   ------------------------------------
