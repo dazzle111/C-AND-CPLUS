@@ -2,12 +2,11 @@
 /*
   ------------------------------------
   Create date : 2014-12-03 19:28
-  Modified date : 2014-12-03 19:28
+  Modified date: 2014-12-09 21:23
   Author : liaoshengxin
   Email : 654504711@qq.com
   ------------------------------------
 */
-
 
 #include <stdio.h>
 char 	num[10];
