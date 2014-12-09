@@ -2,7 +2,7 @@
 /*
   ------------------------------------
   Create date : 2014-12-03 19:17
-  Modified date: 2014-12-03 19:20
+  Modified date: 2014-12-09 21:25
   Author : liaoshengxin
   Email : 654504711@qq.com
   ------------------------------------
@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
 		TriArray[i][j] = rand() % 99;
 		}
 	}
+
 /*	fd = open ("input.txt", O_WRONLY | O_CREAT | O_TRUNC, 0766) ;
 
 	for (i = 1; i <= N; i++){
