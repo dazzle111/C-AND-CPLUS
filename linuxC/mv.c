@@ -1,8 +1,8 @@
-/// \file file_mv.c
+/// \file mv.c
 /*
   ------------------------------------
   Create date : 2014-09-25 22:59
-  Modified date: 2014-09-25 23:12
+  Modified date: 2014-12-09 19:57
   Author : liaoshengxin
   Email : 654504711@qq.com
   ------------------------------------
@@ -18,6 +18,7 @@ int main(int argc,char *argv[]){
 	int fd_old,fd_new;
 	int num=0;
 	char buf[128];
+	
 	if(argc != 3)
 	{
 		printf("参数不够!格式:mv filename1 filename2\n");
