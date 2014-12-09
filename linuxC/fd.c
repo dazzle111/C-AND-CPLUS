@@ -1,12 +1,13 @@
-/// \file file_fd.c
+/// \file fd.c
 /*
   ------------------------------------
   Create date : 2014-09-12 01:22
-  Modified date: 2014-09-12 01:38
+  Modified date: 2014-12-09 19:50
   Author : liaoshengxin
   Email : 654504711@qq.com
   ------------------------------------
 */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
