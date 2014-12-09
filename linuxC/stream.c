@@ -1,8 +1,8 @@
-/// \file file_stream.c
+/// \file stream.c
 /*
   ------------------------------------
   Create date : 2014-09-17 03:13
-  Modified date: 2014-09-17 03:23
+  Modified date: 2014-12-09 20:55
   Author : liaoshengxin
   Email : 654504711@qq.com
   ------------------------------------
@@ -17,6 +17,7 @@
 int main(){
 	int		fd;
 	FILE	*stream;
+
 	unlink("test.txt");
 	fd = open("test.txt",O_CREAT|O_WRONLY,S_IREAD|S_IWRITE);
 	stream = fdopen(fd,"w");
