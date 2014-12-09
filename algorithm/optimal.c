@@ -2,7 +2,7 @@
 /*
   ------------------------------------
   Create date : 2014-12-03 19:26
-  Modified date: 2014-12-09 07:41
+  Modified date: 2014-12-09 21:24
   Author : liaoshengxin
   Email : 654504711@qq.com
   ------------------------------------
@@ -26,6 +26,7 @@ int main(int argc, char *argv[])
 		printf("%d",num);
 		return 0;
 	}
+
 	//把数num分成若干个互不相等的自然数的和，因数各数
 	//越多，乘积越大。为了使因数个数尽可能地多，所以从i=2
 	//开始分，直到和大于等于num
